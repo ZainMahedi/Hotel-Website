@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <title>Exmouth View Hotel</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Importing Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importing icons through fontawesome-->
+
+    <script
+      src="https://kit.fontawesome.com/b77c3fe8e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="header">
+      <nav>
+        <a href="Index.html"><img src="images/Logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Offers.html">OFFERS</a></li>
+            <li><a href="Rooms.html">ROOMS</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>The Exmouth View Hotel</h1>
+        <p>
+          Looking for a place to stay?<br />
+          We are here!
+        </p>
+      </div>
+    </section>
+
+    <!-- Facilities-->
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Exceptional amenities for your Exceptional Stay.</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/cuisine.jpeg" alt="" />
+          <h3>World Class Cuisine</h3>
+          <p>Where every flavor tells a story.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/pool.jpg" alt="" />
+          <h3>Largest Swimming Pool</h3>
+          <p>Reducing stress is easy in the pool.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/gym.jpg" alt="" />
+          <h3>Gym</h3>
+          <p>Refining Your Fitness Levels</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials-->
+    <section class="testimonials">
+      <h1>What Our Custormers Say</h1>
+      <p>Our Reviews</p>
+      <div class="row">
+        <div class="testimonials-col">
+          <img src="images/user1.jpg" alt="" />
+          <div>
+            <p>
+              Convivial company, fantastic food and drink. We had a thoroughly
+              relaxing time. David and Milka and the team are the perfect hosts,
+              always attentive to their guests needs and providing top value for
+              money . We'll be back!
+            </p>
+            <h3>Skyler White</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonials-col">
+          <img src="images/user2.jpg" alt="" />
+          <div>
+            <p>
+              We have just come back from a 5 day break, Sunday being Christmas
+              Eve and Thur being new years day. What a fantastic time we had.
+              the food was excellent, the hosts Milka & Dave were excellent, the
+              staff were nice and attentive, nothing was too much. We will be
+              going back in the summer .
+            </p>
+            <h3>Akshit Kumar</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore -->
+
+    <section class="explore">
+      <h1>Explore Babbacombe</h1>
+      <p>Make the best out of your stay in babbacombe</p>
+
+      <div class="row">
+        <div class="explore-col">
+          <img src="Images/explore1.jpg" alt="" />
+          <div class="layer">
+            <h3>Amazing architectures</h3>
+          </div>
+        </div>
+
+        <div class="explore-col">
+          <img src="Images/explore2.jpg" alt="" />
+          <div class="layer">
+            <h3>Old Towns</h3>
+          </div>
+        </div>
+
+        <div class="explore-col">
+          <img src="Images/explore3.jpg" alt="" />
+          <div class="layer">
+            <h3>Sunny Beaches</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+
+    <section class="cta">
+      <h1>
+        For any support or feedback, <br />
+        feel free to reach out to us
+      </h1>
+      <a href="Contact.html" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <p>Stay Connected With Us</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+    </script>
+  </body>
+</html>

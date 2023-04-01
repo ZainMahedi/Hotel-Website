@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Importing Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importing icons through fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/b77c3fe8e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Importing emailjs for smtp server or sending mails with js through emailjs smtp server-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("xm3XB9ZzUibYssMBB");
+      })();
+    </script>
+    <script src="jsemail.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <script src="menu.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section class="sub-header">
+      <nav>
+        <a href="Index.html"><img src="images/Logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Offers.html">OFFERS</a></li>
+            <li><a href="Rooms.html">ROOMS</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- Location -->
+
+    <section class="location">
+      <h1>Our Location</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.919706409052!2d-3.5180082222404145!3d50.47983848928542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486d0e353e68d8f9%3A0xbabc248b4d3a713b!2s3%20St%20Albans%20Rd%2C%20Torquay%2C%20UK!5e0!3m2!1sen!2sae!4v1676105591193!5m2!1sen!2sae"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- FAQ -->
+
+    <div class="wrapper">
+      <!-- Accordion Heading One -->
+      <h1>Common FAQs</h1>
+      <div class="parent-tab">
+        <input type="radio" name="tab" id="tab-1" />
+        <label for="tab-1">
+          <span>What hours do the tours operate?</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p>
+            Tours will operate from 10:00 AM until 19:00 PM. Time slots are in
+            place to ensure safety, avoid long queues and allow social
+            distancing.
+          </p>
+        </div>
+      </div>
+      <!-- Accordion Heading Two -->
+      <div class="parent-tab">
+        <input type="radio" name="tab" id="tab-2" />
+        <label for="tab-2">
+          <span>How do I manage my booking online?</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p>
+            Please contact us for any changes or amendments to your booking.
+          </p>
+        </div>
+      </div>
+      <!-- Accordion Heading Three -->
+      <div class="parent-tab tab-3">
+        <input type="radio" name="tab" id="tab-3" />
+        <label for="tab-3" class="tab-3">
+          <span>What are the timings for the restraunt?</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <!-- Sub Heading One -->
+          <div class="child-tab">
+            <input type="checkbox" name="sub-tab" id="tab-4" />
+            <label for="tab-4">
+              <span>Al Baik</span>
+              <div class="icon"><i class="fas fa-plus"></i></div>
+            </label>
+            <div class="sub-content">
+              <p>Open from 10 am to 23 pm, All days of the week</p>
+            </div>
+          </div>
+          <!-- Sub Heading Two -->
+          <div class="child-tab">
+            <input type="checkbox" name="sub-tab" id="tab-5" />
+            <label for="tab-5">
+              <span>SkyClub Restraunt</span>
+              <div class="icon"><i class="fas fa-plus"></i></div>
+            </label>
+            <div class="sub-content">
+              <p>
+                Open from from 4 am to 11 am for breakfasts and 19:00 pm to 1:00
+                am midnight for dinner
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Heading Four -->
+      <div class="parent-tab">
+        <input type="radio" name="tab" id="tab-6" />
+        <label for="tab-6">
+          <span>Do I need to print my tickets in advance?</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p>
+            Simply present your booking confirmation and photo ID at our
+            ticketing lounge. You are required to have your lanyard ticket to
+            ensure access into the Inside The Hotel.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <h5>TQ1 3LG, ST ALBANS ROAD, BABBACOMBE</h5>
+              <p>TORQUAY, SOUTH DEVON</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-clock"></i>
+            <span>
+              <h5>Our Call Centre Timings</h5>
+              <p>7:00 Am - 22:00 Pm</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h5>Tel : 01803 327307</h5>
+              <p>Fax : 01803 329967</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope-open"></i>
+            <span>
+              <h5>Customer Care</h5>
+              <p>exmouthcustomercare@gmail.com</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your name"
+              id="Name"
+              required
+            />
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter your email"
+              id="Email"
+              required
+            />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Subject"
+              id="Subject"
+              required
+            />
+          </form>
+          <textarea
+            rows="8"
+            class="form-control"
+            placeholder="Message"
+            id="Message"
+            required
+          ></textarea>
+          <button type="submit" class="hero-btn red-btn" onclick="sendMail()">
+            Send Message
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <p>Stay Connected With Us</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+    </script>
+  </body>
+</html>
